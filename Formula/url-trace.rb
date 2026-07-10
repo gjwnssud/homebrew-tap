@@ -5,21 +5,21 @@
 class UrlTrace < Formula
   desc "Extract the URLs an application actually uses, for whitelist policies"
   homepage "https://github.com/gjwnssud/url-trace"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gjwnssud/url-trace/releases/download/v0.1.1/url-trace_0.1.1_darwin_amd64.tar.gz"
-      sha256 "8eabb17f595202e40e1dee5aeae23d05cf7f88ad75646e8c185575ce894a8e8e"
+      url "https://github.com/gjwnssud/url-trace/releases/download/v0.2.0/url-trace_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7d44caae17222c8d5a420eea44055f4341a448f5a38cdcd3c88b5bf7ac204b1d"
 
       define_method(:install) do
         bin.install "url-trace"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gjwnssud/url-trace/releases/download/v0.1.1/url-trace_0.1.1_darwin_arm64.tar.gz"
-      sha256 "40aadbaee9cc63d5581c7befcf68ab221855a50dd3e9eff5a2371bd78cab3b6e"
+      url "https://github.com/gjwnssud/url-trace/releases/download/v0.2.0/url-trace_0.2.0_darwin_arm64.tar.gz"
+      sha256 "52bf5d6a7274480ae84cbf64581e05b0dca0841f36cff0867494d20676bec2d9"
 
       define_method(:install) do
         bin.install "url-trace"
@@ -29,15 +29,15 @@ class UrlTrace < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjwnssud/url-trace/releases/download/v0.1.1/url-trace_0.1.1_linux_amd64.tar.gz"
-      sha256 "4e5816e06951c1420ac08bae913415daa0095159c81a770a246f51a07ce32ab2"
+      url "https://github.com/gjwnssud/url-trace/releases/download/v0.2.0/url-trace_0.2.0_linux_amd64.tar.gz"
+      sha256 "1c17f0aafcae38fb672af7f216457cf22695d11d794ac911b7087a16f979c176"
       define_method(:install) do
         bin.install "url-trace"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gjwnssud/url-trace/releases/download/v0.1.1/url-trace_0.1.1_linux_arm64.tar.gz"
-      sha256 "205de0fa83976c913adf3f11e01a5be12e1ee1cade4b088c2cd013bb88b28c52"
+      url "https://github.com/gjwnssud/url-trace/releases/download/v0.2.0/url-trace_0.2.0_linux_arm64.tar.gz"
+      sha256 "7f07cc186f8f22b6512d53b2908403433c3ed50ff096cb77a9fd1007bec94524"
       define_method(:install) do
         bin.install "url-trace"
       end
